@@ -62,4 +62,17 @@ h1, h2 {
     width: 100%;
     background: url(../images/hero-image.webp) no-repeat center center;
 
+    /*creates zoom for hero-image*/
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from{
+       transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
